@@ -18,6 +18,19 @@ body{
     animation: drop 1.5s ease;
 }
 
+.wwww{
+	font-size: 22px;
+	font-weight: 5000;
+    top: 50%;
+	color: white;
+    align-items: center;
+    text-align: center;
+	height: auto;
+    animation: drop 1.5s ease;
+}
+
+.hyperlinkgit{ color: red;}
+
 .lambda{ color: red }
 
 .header {

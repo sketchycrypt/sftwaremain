@@ -18,6 +18,17 @@ body{
     animation: drop 1.5s ease;
 }
 
+.laughter{
+	font-size: 36px;
+	font-weight: 5000;
+    top: 50%;
+	color: white;
+    align-items: center;
+    text-align: center;
+	height: auto;
+    animation: drop 1.5s ease;
+}
+
 .lambda{ color: red }
 
 .header {
@@ -30,7 +41,7 @@ body{
 
 .nav-links {
     display: flex;
-    animation: drop 3s ease;
+    animation: drop 1.5s ease;
     
 }
 
@@ -44,13 +55,20 @@ body{
 	top: 60%;
 }
 
+.serverthing{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: reverse-drop 1.5s ease;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     background-color: #23272a;
-    animation: drop 5s ease;
+    animation: drop 1.5s ease;
 }
 .nav-links {
     justify-content: space-around;
@@ -77,5 +95,16 @@ nav {
 	100% {
 		opacity: 1;
 		transform: translateY(0px);
+	}
+}
+
+@keyframes reverse-drop {
+	0% {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(-20px);
 	}
 }

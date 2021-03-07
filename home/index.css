@@ -47,6 +47,17 @@ body{
     
 }
 
+.burger{
+	display: none;
+}
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+    margin: 5px;
+}
+
 .nav-links:hover{
 	cursor: pointer;
 }
@@ -69,7 +80,6 @@ nav {
     justify-content: space-around;
     width: 90%;
 	list-style: none;
-	align-items: center;
 }
 .nav-link {
 	color: red;
@@ -90,5 +100,47 @@ nav {
 	100% {
 		opacity: 1;
 		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 100vh;
+		top: 3vh;
+		background-color: #23272a;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+		cursor: pointer;
+		
+	}
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }

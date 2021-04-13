@@ -43,7 +43,6 @@ body{
 
 .nav-links {
     display: flex;
-    animation: drop 1.5s ease;
     
 }
 
@@ -63,7 +62,6 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #23272a;
-    animation: drop 1.5s ease;
 }
 .nav-links {
     justify-content: space-around;
@@ -140,6 +138,16 @@ nav {
 		display: block;
 		cursor: pointer;
 		
+	}
+}
+
+@media screen and (min-width:961px) {
+	.nav{
+		animation: drop 1.5s ease;
+	}
+
+	.nav-links{
+		animation: drop 1.5s ease;
 	}
 }
 
